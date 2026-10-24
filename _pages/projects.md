@@ -9,11 +9,11 @@ sitemap: false
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}#research">
+    <meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}#publications">
     <link rel="canonical" href="{{ '/' | absolute_url }}">
     <title>Research · Sheng Zhao</title>
   </head>
   <body>
-    <p><a href="{{ '/' | relative_url }}#research">Continue to Research / 进入个人主页</a></p>
+    <p><a href="{{ '/' | relative_url }}#publications">Continue to Research / 进入个人主页</a></p>
   </body>
 </html>

@@ -7,23 +7,18 @@
   },
   "affiliation": {
     "en": "Nanyang Technological University and Shanghai Jiao Tong University",
-    "zh": "南洋理工大学、上海交通大学"
+    "zh": "新加坡南洋理工大学、上海交通大学"
   },
   "degree": {
     "en": "NTU–SJTU joint Ph.D. degree programme",
     "zh": "上海交通大学—新加坡南洋理工大学联授博士学位项目"
   },
-  "bio": {
-    "en": "I am a Ph.D. candidate in Mechanical Engineering in the joint Ph.D. degree programme between Nanyang Technological University and Shanghai Jiao Tong University. My research focuses on vehicle dynamics and control, reinforcement learning, and autonomous driving at the handling limits.",
-    "zh": "我就读于上海交通大学—新加坡南洋理工大学机械工程联授博士学位项目，研究方向包括车辆动力学与控制、强化学习，以及操纵极限下的自主驾驶。"
-  },
   "emails": ["sheng015@e.ntu.edu.sg", "zhaoshengkim@sjtu.edu.cn"],
-  "phones": ["+65-80992018", "+86-18103812371"],
   "education": [
     {
       "school": {
         "en": "Nanyang Technological University",
-        "zh": "南洋理工大学"
+        "zh": "新加坡南洋理工大学"
       },
       "short": "NTU",
       "location": {
@@ -88,75 +83,6 @@
         "en": "GPA 4.232/5.00 · Class rank 1/32 · Major rank 2/129",
         "zh": "GPA 4.232/5.00 · 班级排名 1/32 · 专业排名 2/129"
       }
-    }
-  ],
-  "experience": [
-    {
-      "date": "2026",
-      "title": {
-        "en": "Abu Dhabi Autonomous Racing League",
-        "zh": "阿布扎比自动驾驶赛车联赛"
-      },
-      "org": {
-        "en": "Nanyang Technological University",
-        "zh": "南洋理工大学"
-      },
-      "points": [
-        {
-          "en": "Developed a world model-based reinforcement learning controller using latent rollouts of future vehicle states for online decision adaptation, improving robustness in corner cases such as spin-outs and collisions.",
-          "zh": "开发基于世界模型的强化学习控制器，通过未来车辆状态的潜空间推演实现在线决策自适应，提升车辆在失控旋转、碰撞等极端场景中的鲁棒性。"
-        },
-        {
-          "en": "Developed and tuned a sampling-based motion planner, designing trajectory evaluation cost functions and optimizing planner–MPC interaction to reduce planning latency and tracking delay.",
-          "zh": "开发并调试基于采样的运动规划器，设计候选轨迹评价代价函数，优化规划器与 MPC 的交互，降低规划延迟与跟踪滞后。"
-        }
-      ]
-    },
-    {
-      "date": "2023 – 2025",
-      "title": {
-        "en": "Embedded automotive AI under extreme conditions",
-        "zh": "极限工况下汽车芯片的嵌入式 AI 能力研究"
-      },
-      "org": {
-        "en": "Shanghai Jiao Tong University · UAES",
-        "zh": "上海交通大学 · UAES"
-      },
-      "points": [
-        {
-          "en": "Developed an RL-enhanced MPC controller for coordinated distributed electric-drive control and deployed it on an automotive-grade VCU for full-vehicle testing, mitigating tire-force saturation and instability at the handling limits.",
-          "zh": "开发强化学习增强的 MPC 控制器，实现分布式电驱动协调控制，并部署于车规级整车控制器（VCU）开展实车试验，缓解操纵极限下的轮胎力饱和与车辆失稳问题。"
-        },
-        {
-          "en": "Developed vehicle speed and sideslip angle estimation, traction control, smooth braking, and stationary pivot-turn control functions.",
-          "zh": "开发车速估计、质心侧偏角估计、牵引力控制、平顺制动及原地转向等车辆控制与状态估计功能。"
-        }
-      ]
-    },
-    {
-      "date": "2021 – 2022",
-      "title": {
-        "en": "Autonomous Formula Racing Team",
-        "zh": "无人驾驶方程式赛车队"
-      },
-      "org": {
-        "en": "Wuhan University of Technology · Team leader / Autonomous-system group leader",
-        "zh": "武汉理工大学 · 队长 / 无人驾驶系统组组长"
-      },
-      "points": [
-        {
-          "en": "Led 46 students in developing an autonomous system for FSAC, including steel tube frame design, motor assembly optimization, and modifications to the 24 V low-voltage system.",
-          "zh": "带领 46 名学生开发 FSAC 无人驾驶系统，参与钢管车架设计、电机总成结构优化及 24 V 低压系统改造。"
-        },
-        {
-          "en": "Led track extraction using Hough transform, ICP alignment, and Delaunay triangulation; debugged PID/MPC trajectory control and tested algorithms on a Wuling MINIEV with an X-by-wire chassis.",
-          "zh": "主导基于霍夫变换、ICP 配准及 Delaunay 三角剖分的赛道提取，调试 PID/MPC 轨迹控制，并利用搭载线控底盘的五菱宏光 MINIEV 进行算法预试验。"
-        },
-        {
-          "en": "Coordinated team activities, external teams, suppliers, and sponsorship partnerships. The team received third prize overall in FSAC and the NIO Up-and-Coming Star Prize.",
-          "zh": "统筹车队活动、外部车队与供应商沟通及赞助合作；车队获中国大学生无人驾驶方程式大赛总成绩三等奖及蔚来新秀奖。"
-        }
-      ]
     }
   ],
   "publications": [
@@ -255,75 +181,165 @@
   "patents": [
     {
       "title": {
-        "en": "A vehicle motion control method for longitudinal and transversal cooperative control",
-        "zh": "面向纵横向协同控制的车辆运动控制方法"
+        "en": "A vehicle motion control method for coordinated longitudinal, lateral and vertical control",
+        "zh": "一种面向纵横垂协同控制的车辆运动控制方法"
       },
       "number": "CN117962866A",
       "year": "2024",
+      "publication_date": "2024-05-03",
+      "inventors": {
+        "en": "Xiaodong Wu, Sheng Zhao, et al.",
+        "zh": "吴晓东、赵晟、王亚飞、孔卓、俞宙航"
+      },
       "type": {
-        "en": "Invention patent",
-        "zh": "发明专利"
+        "en": "Published invention patent application",
+        "zh": "发明专利申请（已公开）"
+      },
+      "source_url": "https://patents.google.com/patent/CN117962866A/zh",
+      "stage": "application",
+      "date_label": {
+        "en": "Publication date",
+        "zh": "公开日"
+      },
+      "record_note": {
+        "en": "",
+        "zh": ""
       }
     },
     {
       "title": {
-        "en": "A hierarchical longitudinal, lateral and vertical cooperative control method for full X-by-wire vehicles",
-        "zh": "全线控车辆纵向、横向及垂向分层协同控制方法"
+        "en": "A hierarchical method for coordinated longitudinal, lateral and vertical control of full-vector drive-by-wire vehicles",
+        "zh": "面向全矢量线控车辆的分层式纵横垂三向协同控制方法"
       },
       "number": "CN118112929A",
       "year": "2024",
+      "publication_date": "2024-05-31",
+      "inventors": {
+        "en": "Xiaodong Wu, Sheng Zhao, et al.",
+        "zh": "吴晓东、赵晟、王亚飞、林涌周、俞宙航"
+      },
       "type": {
-        "en": "Invention patent",
-        "zh": "发明专利"
+        "en": "Published invention patent application",
+        "zh": "发明专利申请（已公开）"
+      },
+      "source_url": "https://patents.google.com/patent/CN118112929A/zh",
+      "stage": "application",
+      "date_label": {
+        "en": "Publication date",
+        "zh": "公开日"
+      },
+      "record_note": {
+        "en": "",
+        "zh": ""
       }
     },
     {
+      "number": "CN114540055B",
       "title": {
-        "en": "A rotor structure supplemental cracking device and supplemental cracking method",
-        "zh": "转子结构补充裂解装置及补充裂解方法"
+        "en": "A rotary-wheel supplementary cracking device and supplementary cracking method",
+        "zh": "一种转轮结构补充裂解装置及补充裂解方法"
       },
-      "number": "CN114540055A",
+      "year": "2024",
+      "publication_date": "2024-04-16",
+      "date_label": {
+        "en": "Grant publication date",
+        "zh": "授权公告日"
+      },
+      "stage": "undergraduate_grant",
+      "inventors": {
+        "en": "Guanlun Guo, Rongchuan Wu, Sheng Zhao, Wei Guo, Shiyu An",
+        "zh": "郭冠伦、吴容川、赵晟、郭巍、安识宇"
+      },
+      "type": {
+        "en": "Granted invention patent",
+        "zh": "发明专利（授权）"
+      },
+      "record_note": {
+        "en": "",
+        "zh": ""
+      },
+      "source_url": "https://patents.google.com/patent/CN114540055B/zh"
+    },
+    {
+      "number": "CN114684787B",
+      "title": {
+        "en": "A hydrogen production device capable of buffering cracked gas and its method of use",
+        "zh": "一种可缓冲裂解气的制氢装置及其使用方法"
+      },
+      "year": "2023",
+      "publication_date": "2023-09-26",
+      "date_label": {
+        "en": "Grant publication date",
+        "zh": "授权公告日"
+      },
+      "stage": "undergraduate_grant",
+      "inventors": {
+        "en": "Wei Guo, Pengfei Yuan, Yanlong Peng, Guanlun Guo, Zhujun Chen, Sheng Zhao, Shuyi Guo",
+        "zh": "郭巍、袁鹏飞、彭颜龙、郭冠伦、陈竹君、赵晟、郭舒译"
+      },
+      "type": {
+        "en": "Granted invention patent",
+        "zh": "发明专利（授权）"
+      },
+      "record_note": {
+        "en": "",
+        "zh": ""
+      },
+      "source_url": "https://patents.google.com/patent/CN114684787B/zh"
+    },
+    {
+      "number": "CN113070000B",
+      "title": {
+        "en": "A thermal cracking method for an adaptive reactor with variable internal chamber shape",
+        "zh": "一种内腔室形状可变自适应反应炉的热裂解反应方法"
+      },
       "year": "2022",
+      "publication_date": "2022-08-05",
+      "date_label": {
+        "en": "Grant publication date",
+        "zh": "授权公告日"
+      },
+      "stage": "undergraduate_grant",
+      "inventors": {
+        "en": "Guanlun Guo, Wei Guo, Zelin Xu, Sheng Zhao, Rongchuan Wu",
+        "zh": "郭冠伦、郭巍、徐泽霖、赵晟、吴容川"
+      },
       "type": {
-        "en": "Invention patent",
-        "zh": "发明专利"
-      }
+        "en": "Granted invention patent",
+        "zh": "发明专利（授权）"
+      },
+      "record_note": {
+        "en": "",
+        "zh": ""
+      },
+      "source_url": "https://patents.google.com/patent/CN113070000B/zh"
     },
     {
+      "number": "CN217418606U",
       "title": {
-        "en": "A hydrogen production device that can buffer cracked gas and a method of using the same",
-        "zh": "可缓冲裂解气的制氢装置及其使用方法"
+        "en": "An adaptive thermal cracking reactor with variable internal chamber shape",
+        "zh": "一种内腔室形状可变的自适应热裂解反应炉"
       },
-      "number": "ZL202210286699.7",
       "year": "2022",
-      "type": {
-        "en": "Invention patent",
-        "zh": "发明专利"
-      }
-    },
-    {
-      "title": {
-        "en": "A thermal cracking reaction method for an adaptive reactor with variable inner chamber shape",
-        "zh": "内腔形状可变的自适应反应器热裂解反应方法"
+      "publication_date": "2022-09-13",
+      "date_label": {
+        "en": "Grant publication date",
+        "zh": "授权公告日"
       },
-      "number": "ZL202110375632.6",
-      "year": "2021",
-      "type": {
-        "en": "Invention patent",
-        "zh": "发明专利"
-      }
-    },
-    {
-      "title": {
-        "en": "An adaptive thermal cracking furnace with variable inner chamber shape",
-        "zh": "内腔形状可变的自适应热裂解炉"
+      "stage": "undergraduate_grant",
+      "inventors": {
+        "en": "Guanlun Guo, Wei Guo, Sheng Zhao, Zelin Xu",
+        "zh": "郭冠伦、郭巍、赵晟、徐泽霖"
       },
-      "number": "ZL202120711827.9",
-      "year": "2021",
       "type": {
-        "en": "Utility model",
-        "zh": "实用新型"
-      }
+        "en": "Granted utility model patent",
+        "zh": "实用新型专利（授权）"
+      },
+      "record_note": {
+        "en": "",
+        "zh": ""
+      },
+      "source_url": "https://patents.google.com/patent/CN217418606U/zh"
     }
   ],
   "recognition_groups": [
@@ -390,8 +406,8 @@
             "zh": "IEEE VTS 机动车辆挑战赛（Motor Vehicles Challenge）全球第二名"
           },
           "detail": {
-            "en": "IEEE Vehicular Technology Society (VTS).",
-            "zh": "主办方：IEEE 车辆技术学会（Vehicular Technology Society，VTS）。"
+            "en": "Co-corresponding author · IEEE Vehicular Technology Society (VTS).",
+            "zh": "共同通讯作者 · 主办方：IEEE 车辆技术学会（Vehicular Technology Society，VTS）。"
           },
           "source_url": "https://vtsociety.org/event/workshop/ieee-vts-motor-vehicles-challenge-2026"
         },
@@ -403,8 +419,8 @@
             "zh": "第八届中国自动化学会车辆控制与智能化国际会议（CVCI 2024）智能底盘控制挑战赛金奖"
           },
           "detail": {
-            "en": "First author of the winning entry · 8th CAA International Conference on Vehicular Control and Intelligence; sponsored by the CAA Technical Committee on Vehicle Control and Intelligence.",
-            "zh": "获奖作品第一作者 · 主办方：中国自动化学会车辆控制与智能化专业委员会。"
+            "en": "First author · 8th CAA International Conference on Vehicular Control and Intelligence; sponsored by the CAA Technical Committee on Vehicle Control and Intelligence.",
+            "zh": "第一作者 · 主办方：中国自动化学会车辆控制与智能化专业委员会。"
           },
           "source_url": "https://www.ascl.jlu.edu.cn/vci/Benchmark2024CallforChallenge.pdf"
         },
@@ -416,8 +432,8 @@
             "zh": "“蔚来杯”中国大学生无人驾驶方程式大赛（FSAC）全国三等奖、蔚来新秀奖"
           },
           "detail": {
-            "en": "Team captain / autonomous-system group leader · Wuhan University of Technology; competition organized by China-SAE.",
-            "zh": "担任车队队长 / 无人驾驶系统组组长 · 武汉理工大学；赛事主办方：中国汽车工程学会。"
+            "en": "Team captain / former autonomous-system group leader · Wuhan University of Technology; competition organized by China-SAE.",
+            "zh": "担任车队队长 / 曾任无人驾驶系统组组长 · 武汉理工大学；赛事主办方：中国汽车工程学会。"
           },
           "source_url": "https://www.sae-china.org/meeting/meeting.php?id=469"
         },
@@ -557,6 +573,59 @@
           "source_url": "https://img.sae-china.org/web/2023/03/汽车工程师能力评价实施细则-网站发布版.pdf"
         }
       ]
+    }
+  ],
+  "academic_service": [
+    {
+      "title": {
+        "en": "Secretary, Inaugural Intelligent Baja Rules Committee (2026)",
+        "zh": "首届智能巴哈规则委员会秘书（2026年）"
+      },
+      "detail": {
+        "en": "China-SAE Baja Competition.",
+        "zh": "中国汽车工程学会巴哈大赛。"
+      }
+    },
+    {
+      "title": {
+        "en": "Journal reviewer",
+        "zh": "期刊审稿人"
+      },
+      "detail": {
+        "en": "IEEE Transactions on Intelligent Transportation Systems (IEEE T-ITS); IEEE Transactions on Transportation Electrification (IEEE TTE).",
+        "zh": "担任 IEEE Transactions on Intelligent Transportation Systems（IEEE T-ITS）、IEEE Transactions on Transportation Electrification（IEEE TTE）等期刊审稿人。"
+      }
+    }
+  ],
+  "research_interests": [
+    {
+      "en": "Vehicle dynamics and control at the handling limits",
+      "zh": "操纵极限下的车辆动力学与控制"
+    },
+    {
+      "en": "Autonomous racing",
+      "zh": "自动驾驶赛车"
+    },
+    {
+      "en": "Vehicle drift control",
+      "zh": "车辆漂移控制"
+    }
+  ],
+  "google_scholar_url": "https://scholar.google.com/citations?user=fY-nSAcAAAAJ&hl=zh-CN",
+  "patent_categories": [
+    {
+      "id": "application",
+      "title": {
+        "en": "Published patent applications",
+        "zh": "公开专利申请"
+      }
+    },
+    {
+      "id": "undergraduate_grant",
+      "title": {
+        "en": "Granted patents from undergraduate research",
+        "zh": "本科阶段授权专利"
+      }
     }
   ]
 }
