@@ -73,7 +73,7 @@
     }
 
     function updateNavigation() {
-      const mobile = window.matchMedia("(max-width: 760px)").matches;
+      const mobile = window.getComputedStyle(header).position === "sticky";
       const offset = mobile ? header.getBoundingClientRect().height + 20 : 20;
       document.documentElement.style.setProperty("--scroll-offset", offset + "px");
       if (selectedSection) {
