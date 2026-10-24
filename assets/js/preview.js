@@ -18,6 +18,20 @@ var breaks = [];
 
 function updateNav() {
 
+  var $themeToggle = $('#theme-toggle');
+  if (window.matchMedia('(max-width: 600px)').matches) {
+    $themeToggle.prependTo('.header-controls');
+    $hlinks.children().appendTo($vlinks);
+    breaks = [];
+    $btn.addClass('hidden').removeClass('close').attr('count', 0);
+    $hlinks.addClass('hidden');
+    var mobileHeight = $('.masthead').height();
+    $('body').css('padding-top', mobileHeight + 'px');
+    $('.sidebar').css('padding-top', '');
+    return;
+  }
+  $themeToggle.appendTo($vlinks);
+
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
   // The visible list is overflowing the nav
