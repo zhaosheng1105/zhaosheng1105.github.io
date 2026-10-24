@@ -1,0 +1,163 @@
+---
+layout: null
+permalink: /
+title: Sheng Zhao
+description: Mechanical Engineering Ph.D. candidate in the NTU–SJTU joint degree programme. Research in vehicle dynamics, control, and reinforcement learning.
+---
+
+{% assign p = site.data.profile %}
+<!doctype html>
+<html lang="en" data-language="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ page.description | escape }}" />
+    <link rel="canonical" href="{{ '/' | absolute_url }}" />
+    <title>Sheng Zhao | Personal Homepage</title>
+    <script src="{{ '/assets/js/profile.js' | relative_url }}"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/profile.css' | relative_url }}" />
+    <noscript
+      ><style>
+        html[data-language] .zh {
+          display: revert;
+        }
+        .language-button {
+          display: none;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip-link" href="#main"><span class="en" lang="en">Skip to content</span><span class="zh" lang="zh-CN">跳至正文</span></a>
+    <header class="site-header">
+      <div class="header-inner">
+        <nav aria-label="Main navigation / 主导航">
+          <a href="#education"><span class="en" lang="en">Education</span><span class="zh" lang="zh-CN">教育背景</span></a>
+          <a href="#research"><span class="en" lang="en">Research</span><span class="zh" lang="zh-CN">研究经历</span></a>
+          <a href="#publications"><span class="en" lang="en">Publications</span><span class="zh" lang="zh-CN">论文</span></a>
+          <a href="#honors"><span class="en" lang="en">Honors</span><span class="zh" lang="zh-CN">荣誉</span></a>
+          <a href="#contact"><span class="en" lang="en">Contact</span><span class="zh" lang="zh-CN">联系</span></a>
+        </nav>
+        <button class="language-button" id="language-toggle" type="button" aria-label="切换为中文" aria-controls="main">
+          <span class="en" lang="zh-CN">中文</span><span class="zh" lang="en">English</span>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="profile" id="top" aria-labelledby="profile-title">
+        <h1 id="profile-title">
+          <span class="en" lang="en">{{ p.name | escape }}</span><span class="zh" lang="zh-CN">{{ p.name_zh | escape }}</span>
+        </h1>
+        <p><span class="en" lang="en">{{ p.role.en | escape }}</span><span class="zh" lang="zh-CN">{{ p.role.zh | escape }}</span></p>
+        <p><span class="en" lang="en">{{ p.affiliation.en | escape }}</span><span class="zh" lang="zh-CN">{{ p.affiliation.zh | escape }}</span></p>
+        <p class="profile-bio">
+          <span class="en" lang="en">{{ p.bio.en | escape }}</span><span class="zh" lang="zh-CN">{{ p.bio.zh | escape }}</span>
+        </p>
+        <p>{% for email in p.emails %}<a href="mailto:{{ email }}">{{ email }}</a>{% unless forloop.last %}<br />{% endunless %}{% endfor %}</p>
+      </section>
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title"><span class="en" lang="en">Education</span><span class="zh" lang="zh-CN">教育背景</span></h2>
+        {% for item in p.education %}
+        <article class="education-card">
+          <h3><span class="en" lang="en">{{ item.school.en | escape }}</span><span class="zh" lang="zh-CN">{{ item.school.zh | escape }}</span></h3>
+          <p class="date">
+            <span class="en" lang="en">{{ item.date.en | escape }}</span><span class="zh" lang="zh-CN">{{ item.date.zh | escape }}</span>
+          </p>
+          <p><span class="en" lang="en">{{ item.degree.en | escape }}</span><span class="zh" lang="zh-CN">{{ item.degree.zh | escape }}</span></p>
+          <p><span class="en" lang="en">{{ item.detail.en | escape }}</span><span class="zh" lang="zh-CN">{{ item.detail.zh | escape }}</span></p>
+        </article>
+        {% endfor %}
+      </section>
+      <section id="research" aria-labelledby="research-title">
+        <h2 id="research-title"><span class="en" lang="en">Research Experience</span><span class="zh" lang="zh-CN">研究经历</span></h2>
+        {% for item in p.experience %}
+        <article class="experience">
+          <h3><span class="en" lang="en">{{ item.title.en | escape }}</span><span class="zh" lang="zh-CN">{{ item.title.zh | escape }}</span></h3>
+          <p class="date">{{ item.date }}</p>
+          <p><span class="en" lang="en">{{ item.org.en | escape }}</span><span class="zh" lang="zh-CN">{{ item.org.zh | escape }}</span></p>
+          <ul>
+            {% for point in item.points %}
+            <li><span class="en" lang="en">{{ point.en | escape }}</span><span class="zh" lang="zh-CN">{{ point.zh | escape }}</span></li>
+            {% endfor %}
+          </ul>
+        </article>
+        {% endfor %}
+      </section>
+      <section id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title"><span class="en" lang="en">Publications</span><span class="zh" lang="zh-CN">论文</span></h2>
+        <ol class="publication-list">
+          {% for paper in p.publications %}
+          <li class="publication">
+            <h3 lang="en">{{ paper.title | escape }}</h3>
+            <p lang="en">{{ paper.authors | escape | replace: 'Sheng Zhao', '<strong>Sheng Zhao</strong>' }}</p>
+            <p lang="en">{{ paper.venue | escape }}</p>
+            {% if paper.preprint %}
+            <p class="publication-status"><span class="en" lang="en">Preprint</span><span class="zh" lang="zh-CN">预印本</span></p>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ol>
+      </section>
+      <section id="honors" aria-labelledby="awards-title">
+        <h2 id="awards-title">
+          <span class="en" lang="en">Honors, Awards and Programmes</span><span class="zh" lang="zh-CN">荣誉奖励与人才项目</span>
+        </h2>
+        {% for group in p.recognition_groups %}
+        <section class="recognition-group" aria-labelledby="{{ group.id }}-title">
+          <h3 id="{{ group.id }}-title">
+            <span class="en" lang="en">{{ group.title.en | escape }}</span><span class="zh" lang="zh-CN">{{ group.title.zh | escape }}</span>
+          </h3>
+          <ul class="award-list">
+            {% for item in group.items %}
+            <li id="award-{{ item.id }}">
+              <span class="date">{{ item.year }}</span>
+              <div>
+                <p class="award-title">
+                  {% if item.source_url != '' %}<a href="{{ item.source_url | escape }}" target="_blank" rel="noopener noreferrer"
+                    >{% endif %} <span class="en" lang="en">{{ item.title.en | escape }}</span
+                    ><span class="zh" lang="zh-CN">{{ item.title.zh | escape }}</span> {% if item.source_url != '' %}</a
+                  >{% endif %}
+                </p>
+                <p class="award-detail">
+                  <span class="en" lang="en">{{ item.detail.en | escape }}</span><span class="zh" lang="zh-CN">{{ item.detail.zh | escape }}</span>
+                </p>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endfor %}
+      </section>
+      <section id="patents" aria-labelledby="patents-title">
+        <h2 id="patents-title"><span class="en" lang="en">Patents</span><span class="zh" lang="zh-CN">专利</span></h2>
+        <p class="note zh" lang="zh-CN">中文名称根据简历中的英文名称翻译。</p>
+        <ul class="patent-list">
+          {% for item in p.patents %}
+          <li>
+            <p><span class="en" lang="en">{{ item.title.en | escape }}</span><span class="zh" lang="zh-CN">{{ item.title.zh | escape }}</span></p>
+            <p class="note">
+              {{ item.number }} · {{ item.year }} · <span class="en" lang="en">{{ item.type.en | escape }}</span
+              ><span class="zh" lang="zh-CN">{{ item.type.zh | escape }}</span>
+            </p>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title"><span class="en" lang="en">Contact</span><span class="zh" lang="zh-CN">联系方式</span></h2>
+        {% for email in p.emails %}
+        <p><a href="mailto:{{ email }}">{{ email }}</a></p>
+        {% endfor %} {% for phone in p.phones %}
+        <p><a href="tel:{{ phone | remove: '-' }}">{{ phone }}</a></p>
+        {% endfor %}
+        <p><a href="https://github.com/zhaosheng1105">GitHub</a></p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>
+        © {{ 'now' | date: '%Y' }} <span class="en" lang="en">{{ p.name | escape }}</span
+        ><span class="zh" lang="zh-CN">{{ p.name_zh | escape }}</span>
+      </p>
+    </footer>
+  </body>
+</html>
